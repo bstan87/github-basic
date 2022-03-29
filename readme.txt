@@ -4,6 +4,12 @@ git status
 git add .
 git add filename1 filename2
 git commit -m "first commit"
+git log
 
 git config --global user.email ""
 git config --global user.name ""
+
+git checkout e639a19387999d47ff2637e3939abb7a8e7094ed
+git checkout master
+
+git branch
