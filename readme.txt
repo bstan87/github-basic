@@ -16,3 +16,5 @@ git checkout master
 git branch
 git branch second-branch
 git checkout -b third-branch
+
+git merge third-branch
