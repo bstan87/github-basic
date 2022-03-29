@@ -18,3 +18,6 @@ git branch second-branch
 git checkout -b third-branch
 
 git merge third-branch
+
+git switch third-branch // same as git checkout third-branch
+git switch -c fourth-branch // same as git checkout -b fourth-branch
