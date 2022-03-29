@@ -25,3 +25,25 @@ git switch -c fourth-branch // same as git checkout -b fourth-branch
 
 git ls-files
 git rm test.txt
+
+//to revert changes
+git checkout init.txt
+git checkout .  // revert all to head
+git restore init.txt
+git restore .  // revert all to head
+
+// to delete untracked file
+git clean -dn //for checking
+git clean -df // force to delete
+
+// undo staged changes
+git restore --staged init.txt // latest
+git reset --> git checkout xxx // old way
+
+// to delete latest Head to go back one step
+git reset --soft HEAD~1    // soft reset, only commit
+git reset HEAD~1 // file will be delete from staging area
+git reset --hard HEAD~1 // remove commit, remove changes, remove file, remove from stage area
+
+// delete branches
+git branch -D fourth-branch
