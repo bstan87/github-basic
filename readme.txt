@@ -47,3 +47,25 @@ git reset --hard HEAD~1 // remove commit, remove changes, remove file, remove fr
 
 // delete branches
 git branch -D fourth-branch
+
+// stash
+git stash apply
+git stash
+git stash list
+git stash push -m "third feature"
+git stash drop 0/ git stash clear
+
+
+git merge --squash feature // only one commit need
+git merge --no-ff // no fastforward merge
+
+git merge --abort // exit the merge. rollback
+git log --merge
+git diff // check different
+git cherry-pick <id> // only merge specify commit
+
+
+//tag
+git tag 1.0 <id>
+git tag // to list
+git show 1.0 // to display tag detail
